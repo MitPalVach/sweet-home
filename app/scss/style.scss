@@ -76,11 +76,11 @@
     width: 24px;
     height: 18px;
     color: #fff;
-    background: #ff0000;
+    background: #ed1915;
     border-radius: 50%;
     text-align: center;
-    bottom: -15px;
-    right: -13px;
+    bottom: -4px;
+    right: -12px;
 
   }
 }
@@ -90,7 +90,7 @@
 // ------- HEADER BOTTOM ---------
 
 .header__bottom {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .menu-categories {
@@ -99,10 +99,12 @@
   align-items: center;
   justify-content: space-around;
   min-height: 53px;
+
   &__item {
     position: relative;
 
   }
+
   &__link {
     position: relative;
     transition: all .3s;
@@ -113,12 +115,13 @@
       position: absolute;
       width: 0;
       left: auto;
-      background: #ff0000;
+      background: #ed1915;
       height: 3px;
       bottom: 0;
       right: 0;
       transition: all .3s;
     }
+
     &:hover::before {
       width: 100%;
       right: auto;
@@ -128,38 +131,153 @@
   }
 }
 
+// -------- HEADER BOTTOM END -------
+
+// --------- SLIDER ------------
+
+.banner-section {
+  margin-bottom: 50px;
+  &__slider {
+
+    &-item {
+      outline: none;
+
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slick-dots li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #181414;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.slick-active button {
+  background: #fff;
+}
+
+// ---------- SLIDER END -----------
 
 
+// ----------- STOCK ------------
 
 
+.stock {
 
+  &__item {
+    max-width: 300px;
+    text-align: center;
+    border: #e2e0e0 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    &-top {
+      display: flex;
+      justify-content: space-between;
+    }
 
+    &-icon {
+      color: #fff;
+      background: #ed1915;
+      padding: 8px 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 2px;
+      @extend %sfpd-bold;
+    }
 
+    &-price {
+      margin-right: 15px;
+    }
 
+    &-price--new {
+      color: #ed1915;
+      font-size: 24px;
+      line-height: 28px;
+      @extend %sfpd-med;
+    }
 
+    &-price--old {
+      color: #888888;
+      text-decoration: line-through;
+      font-size: 18px;
+      line-height: 20px;
 
+    }
 
+    &--img {
+      padding: 30px 0;
+      width: auto;
+      margin: 0 auto;
+    }
 
+    &--title {
+      @extend %sfpd-bold;
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 12px;
+      width: 280px;
+      padding: 0 15px;
+    }
+    
+    &--footer {
+      background: #e2e0e0;
+      padding: 25px 20px;
+      @extend %sfpd-med;
+      font-size: 18px;
+      line-height: 22px;
 
+    }
+    &--footer span {
+      color: #ed1915;
+      display: block;
+      @extend %sfpd-bold;
+    }
+  }
 
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    cursor: pointer;
+    outline: none;
 
+    &-prev {
+      left: 20px;
+    }
 
+    &-next {
+      right: 20px;
+    }
+  }
+}
 
-
-// ------- HEADER BOTTOM ---------
-
-
-
-
-
-
-
-
-
-
-
-
+//--------- STOCK END ---------
 
 
 @import "media";
