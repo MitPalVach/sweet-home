@@ -2,9 +2,130 @@
 @import "vars";
 @import "fonts";
 
-.header__top-inner {
+// ------- HEADER TOP ---------
+
+.header {
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    @extend %sfpd-bold;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__address {
+    margin-right: 60px;
+    width: 290px;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/pin.svg');
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: -8px;
+    }
+  }
+}
+
+.menu__item {
+  display: inline-block;
+
+}
+
+.menu__item + .menu__item {
+  padding-left: 50px;
+
+}
+
+.user-list {
+  margin-right: 15px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    padding-right: 20px;
+
+  }
+
+  &__link {
+
+    &-img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.heart,
+.cart {
+  position: relative;
+
+  &__num {
+    position: absolute;
+    font-size: 12px;
+    line-height: 19px;
+    @extend %sfpd-med;
+    width: 24px;
+    height: 18px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 50%;
+    text-align: center;
+    bottom: -15px;
+    right: -13px;
+
+  }
+}
+
+// ------- HEADER TOP END---------
+
+// ------- HEADER BOTTOM ---------
+
+.header__bottom {
+  margin-bottom: 70px;
+}
+
+.menu-categories {
+  background: #e2e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 53px;
+  &__item {
+    position: relative;
+
+  }
+  &__link {
+    position: relative;
+    transition: all .3s;
+    padding: 17px 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      left: auto;
+      background: #ff0000;
+      height: 3px;
+      bottom: 0;
+      right: 0;
+      transition: all .3s;
+    }
+    &:hover::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+
+    }
+  }
 }
 
 
@@ -26,36 +147,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ------- HEADER BOTTOM ---------
 
 
 
