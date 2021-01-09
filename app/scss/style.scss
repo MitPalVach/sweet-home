@@ -90,7 +90,6 @@
 // ------- HEADER BOTTOM ---------
 
 .header__bottom {
-  margin-bottom: 50px;
 }
 
 .menu-categories {
@@ -136,7 +135,7 @@
 // --------- SLIDER ------------
 
 .banner-section {
-  margin-bottom: 50px;
+
   &__slider {
 
     &-item {
@@ -197,9 +196,11 @@
     }
 
     &-icon {
+      margin-top: 1px;
+      margin-left: 1px;
       color: #fff;
       background: #ed1915;
-      padding: 8px 20px;
+      padding: 10px 20px;
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 2px;
@@ -239,7 +240,7 @@
       width: 280px;
       padding: 0 15px;
     }
-    
+
     &--footer {
       background: #e2e0e0;
       padding: 25px 20px;
@@ -248,6 +249,7 @@
       line-height: 22px;
 
     }
+
     &--footer span {
       color: #ed1915;
       display: block;
@@ -278,6 +280,60 @@
 }
 
 //--------- STOCK END ---------
+
+//------------TABS-----------
+.search {
+  &__tabs {
+    margin-bottom: 25px;
+
+    &-item {
+      padding: 12px 26px;
+
+      &--active {
+        background: #e2e0e0;
+      }
+    }
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item--active {
+    display: block;
+  }
+
+  &__content-form {
+    display: flex;
+  }
+
+  &__content-btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    @extend %sfpd-med;
+    color: #ffffff;
+    background: #ed1915;
+    padding: 12px 26px;
+    border: none;
+  }
+
+  &__content-input {
+    width: 100%;
+    border: none;
+    background: #e2e0e0;
+    padding: 12px 26px;
+    font-size: 15px;
+    line-height: 18px;
+
+    &::placeholder {
+      color: #888888;
+    }
+  }
+
+}
+
+
+//------------TABS END-----------
 
 
 @import "media";

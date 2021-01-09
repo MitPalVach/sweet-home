@@ -9,6 +9,7 @@ box-sizing: inherit;
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 ul,
@@ -46,7 +47,9 @@ body {
   margin: 0 auto;
 }
 
-
+.page-section {
+  margin-bottom: 60px;
+}
 
 
 

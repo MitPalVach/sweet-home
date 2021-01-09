@@ -17,7 +17,7 @@
 
 <!--HEADER TOP-->
 
-<header class="header">
+<header class="header page-section">
 
     <div class="header__top">
         <div class="container">
@@ -137,7 +137,7 @@
 
 <!--SLIDER-->
 
-<section class="banner-section">
+<section class="banner-section page-section">
     <div class="container">
         <div class="banner-section__slider">
             <a class="banner-section__slider-item" href="#">
@@ -166,7 +166,7 @@
 <!--STOCK-->
 
 
-<section class="stock">
+<section class="stock page-section">
     <div class="container">
         <div class="stock__items">
 
@@ -271,8 +271,43 @@
     </div>
 </section>
 
-
 <!--STOCK END-->
+
+<!--TABS-->
+
+<section class="search page-section">
+    <div class="container">
+        <div class="search__inner">
+            <div class="search__tabs">
+                <a class="search__tabs-item search__tabs-item--active" href="#tab-1">Поиск по названию</a>
+                <a class="search__tabs-item" href="#tab-2">Поиск по артикулу</a>
+                <a class="search__tabs-item" href="#tab-3">Поиск по производителю</a>
+            </div>
+            <div class="search__content">
+                <div class="search__content-item search__content-item--active" id="tab-1">
+                    <form class="search__content-form" action="">
+                        <input class="search__content-input" type="text" placeholder="Введите название">
+                        <button class="search__content-btn" type="submit">Найти</button>
+                    </form>
+                </div>
+                <div class="search__content-item" id="tab-2">
+                    <form class="search__content-form" action="">
+                        <input class="search__content-input" type="text" placeholder="Введите артикул">
+                        <button class="search__content-btn" type="submit">Найти</button>
+                    </form>
+                </div>
+                <div class="search__content-item" id="tab-3">
+                    <form class="search__content-form" action="">
+                        <input class="search__content-input" type="text" placeholder="Введите фирму производителя">
+                        <button class="search__content-btn" type="submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--TABS END-->
 
 
 <script src="js/slick.min.js"></script>
