@@ -13,14 +13,10 @@
   font-weight: 500;
 }
 
-%red-color {
-  color: #ed1915;
-}
+$color-red: #ed1915;
 
-%gray-color {
-  color: #e2e0e0;
-}
+$color-l-gray: #e2e0e0;
 
-%black-color {
-  color: #181414;
-}
+$color-gray: #888888;
+
+$color-black: #181414;
