@@ -282,9 +282,7 @@
 }
 
 
-
-
-  //--------- STOCK END ---------
+//--------- STOCK END ---------
 
 //------------TABS-----------
 .search {
@@ -409,7 +407,7 @@
   padding: 35px 20px 60px;
   transition: all .3s;
   min-height: 400px;
-outline: none;
+  outline: none;
 
   &__wrapper {
     position: relative;
@@ -487,6 +485,7 @@ outline: none;
     line-height: 26px;
     color: #888888;;
     text-decoration: line-through;
+    display: none;
   }
 
   &__hover-text {
@@ -583,9 +582,16 @@ outline: none;
   &-slider__btn-next {
     right: -30px;
   }
+
+  &-item--sale {
+    .product-item__price-old {
+      display: block;
+    }
+  }
 }
 
 .products {
+  margin-bottom: 50px;
   &__title {
     font-size: 28px;
     line-height: 32px;
@@ -612,7 +618,7 @@ outline: none;
 
 .product__more {
   text-align: center;
-  margin: 25px 0 50px;
+  margin: 25px 0 0;
 }
 
 .product__more-link {
@@ -623,6 +629,20 @@ outline: none;
 }
 
 //---------------PRODUCTS----------------
+
+.banner {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+//----------------RECOMMEND------------
+
+
+
+
+//---------------RECOMMEND END -------------
+
+
 
 
 @import "media";
