@@ -591,7 +591,6 @@
 }
 
 .products {
-  margin-bottom: 50px;
   &__title {
     font-size: 28px;
     line-height: 32px;
@@ -628,19 +627,125 @@
   padding: 15px 40px;
 }
 
-//---------------PRODUCTS----------------
+//---------------PRODUCTS END----------------
 
 .banner {
-  margin-bottom: 50px;
   text-align: center;
 }
 
-//----------------RECOMMEND------------
+//-------------SOCIAL------------
+
+.social {
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+
+    &-letter {
+      width: 300px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+    }
+  }
+  &-form {
+    display: flex;
+  }
+
+  &-form__input{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #888888;
+    outline: none;
+
+    &::placeholder {
+    color: #888;
+  }
+  }
+
+
+  &-form__btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: $color-red;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+
+  }
+
+  &__list {
+    display: flex;
+
+    &-icon {
+      margin: 20px 10px 0 10px;
+    }
+  }
+
+  &-img {
+    width: 33px;
+    height: 33px;
+  }
+}
 
 
 
 
-//---------------RECOMMEND END -------------
+
+
+
+
+
+
+//-----------------SOCIAL END---------------
+
+//----------------FOOTER------------
+
+.footer {
+  background: $color-l-gray;
+
+  &__top {
+    padding-top: 30px;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      &-item {
+        width: 200px;
+      }
+    }
+    &-title {
+      margin-bottom: 15px;
+    }
+    &-list__item, a {
+      line-height: 28px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &__bottom {
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+}
+
+//---------------FOOTER END -------------
 
 
 
