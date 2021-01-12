@@ -221,7 +221,7 @@
     }
 
     &-price--old {
-      color: #888888;;
+      color: #888888;
       text-decoration: line-through;
       font-size: 18px;
       line-height: 20px;
@@ -640,6 +640,7 @@
     display: flex;
     justify-content: space-around;
   }
+
   &__item {
 
     &-letter {
@@ -650,19 +651,20 @@
       margin-bottom: 10px;
     }
   }
+
   &-form {
     display: flex;
   }
 
-  &-form__input{
+  &-form__input {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #888888;
     outline: none;
 
     &::placeholder {
-    color: #888;
-  }
+      color: #888;
+    }
   }
 
 
@@ -694,14 +696,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 //-----------------SOCIAL END---------------
 
 //----------------FOOTER------------
@@ -711,32 +705,24 @@
 
   &__top {
     padding-top: 30px;
+
     &-inner {
       display: flex;
       justify-content: space-between;
+
       &-item {
         width: 200px;
       }
     }
+
     &-title {
       margin-bottom: 15px;
     }
+
     &-list__item, a {
       line-height: 28px;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   &__bottom {
@@ -747,7 +733,36 @@
 
 //---------------FOOTER END -------------
 
+//-------------BREADCRUMBS------------
 
+.breadcrumbs {
+  margin-bottom: 40px;
+
+  &__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    color: #888888;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      background-image: url('../images/link-right.svg');
+      width: 6px;
+      height: 9px;
+      bottom: 5px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+
+
+//---------------------BREADCRUMBS END------------
 
 
 @import "media";

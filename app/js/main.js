@@ -12,16 +12,16 @@ $(function () {
     });
 
     $('.stock__items').slick({
-        prevArrow: '<button class="stock__btn stock__btn-prev"><img src="../images/left_1.svg" alt=""></button>',
-        nextArrow: '<button class="stock__btn stock__btn-next"><img src="../images/right_1.svg" alt=""></button>',
+        prevArrow: '<button class="stock__btn stock__btn-prev"><img class="slider__button-left" src="../images/left_1.svg" alt=""></button>',
+        nextArrow: '<button class="stock__btn stock__btn-next"><img class="slider__button-right" src="../images/right_1.svg" alt=""></button>',
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
     });
 
     $('.product-slider').slick({
-        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img src="../images/left_1.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img src="../images/right_1.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img class="slider__button-left" src="../images/left_1.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img class="slider__button-right" src="../images/right_1.svg" alt=""></button>',
         slidesToShow: 4,
         slidesToScroll: 1
     });
