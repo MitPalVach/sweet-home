@@ -404,14 +404,17 @@
 .product-item {
   border: $color-l-gray 1px solid;
   text-align: center;
-  padding: 35px 20px 60px;
+  padding: 45px 20px 60px;
   transition: all .3s;
   min-height: 400px;
   outline: none;
+  width: 270px;
 
   &__wrapper {
     position: relative;
-    width: 270px;
+    min-width: 270px;
+    max-width: 271px;
+
   }
 
   &__title {
@@ -470,7 +473,7 @@
   }
 
   &__img {
-    width: 200px;
+    width: 220px;
   }
 
   &__price-new {
@@ -519,7 +522,7 @@
     padding: 7px 15px;
     background-color: $color-red;
     position: absolute;
-    right: 2px;
+    right: 3px;
     top: 2px;
     text-transform: uppercase;
     color: #ffffff;
@@ -761,8 +764,89 @@
   }
 }
 
-
 //---------------------BREADCRUMBS END------------
+
+//---------------------CATALOG------------
+
+.catalog {
+
+  &__title {
+    @extend %sfpd-bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &-items button {
+    }
+
+    &-btn {
+      color: #181414;
+      border: none;
+      padding: 7px 20px;
+      outline: none;
+      cursor: pointer;
+      background: $color-l-gray;
+      font-size: 14px;
+      line-height: 16px;
+
+      &, button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+      }
+
+      &, button + button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &-grid__icon {
+
+  }
+
+  &-row__icon {
+
+  }
+
+  &__inner {
+    display: flex;
+
+
+    &-aside {
+      min-width: 290px;
+      margin-right: 15px;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+
+      &, .product-item__wrapper {
+        margin-bottom: 30px;
+      }
+    }
+
+
+
+  }
+
+
+
+}
+
+
+//---------------------CATALOG END------------
 
 
 @import "media";
