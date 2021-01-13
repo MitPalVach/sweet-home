@@ -777,21 +777,24 @@
     margin-bottom: 20px;
   }
 
+
   &__filter {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 
-    &-items button {
+    &-btn.catalog__filter-btn--active {
+      background: $color-l-gray;
+    }
+
+    &-items a {
+      padding: 6px 10px;
     }
 
     &-btn {
       color: #181414;
-      border: none;
-      padding: 7px 20px;
       outline: none;
       cursor: pointer;
-      background: $color-l-gray;
       font-size: 14px;
       line-height: 16px;
 
@@ -804,8 +807,9 @@
       }
 
       &, button + button {
-        margin-left: 10px;
+        margin-left: 22px;
       }
+
     }
   }
 
@@ -820,6 +824,13 @@
   &__inner {
     display: flex;
 
+    &-list {
+      display: none;
+    }
+
+    &-list.catalog__inner-list--active {
+      display: block;
+    }
 
     &-aside {
       min-width: 290px;
@@ -863,6 +874,7 @@
       &, a {
         display: block;
       }
+
       &--prev,
       &--next {
         margin-top: 3px;

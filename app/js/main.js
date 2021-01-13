@@ -41,7 +41,18 @@ $(function () {
         $(this).toggleClass('product-item__heart--active')
     });
 
+    $('.catalog__filter-btn').on('click', function (e) {
+        e.preventDefault();
+    });
+
+
+    $(".catalog__filter-items .catalog__tab").click(function() {
+        $(".catalog__tab").removeClass("catalog__filter-btn--active").eq($(this).index()).addClass("catalog__filter-btn--active");
+        $(".catalog__inner-list").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("catalog__filter-btn--active");
 
 
 });
+
+
 
