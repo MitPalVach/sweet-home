@@ -46,10 +46,17 @@ $(function () {
     });
 
 
-    $(".catalog__filter-items .catalog__tab").click(function() {
+    $(".catalog__filter-items .catalog__tab").click(function () {
         $(".catalog__tab").removeClass("catalog__filter-btn--active").eq($(this).index()).addClass("catalog__filter-btn--active");
         $(".catalog__inner-list").hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass("catalog__filter-btn--active");
+
+
+    $('.filter-style').styler();
+    $('.filter__item-drop').on('click', function () {
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle();
+    });
 
 
 });
