@@ -922,7 +922,7 @@
 
     }
 
-    &__item-drop {
+    &__item-drop, &__item-list {
       margin: 30px 0;
     }
 
@@ -945,6 +945,7 @@
         margin-bottom: 8px;
       }
     }
+
 
   }
 }
@@ -1011,6 +1012,7 @@
         width: 12px;
         height: 8px;
       }
+
       &--active {
         &::before {
           content: '';
@@ -1022,6 +1024,7 @@
 
       }
     }
+
   }
 }
 
@@ -1069,12 +1072,12 @@
   border-top-color: $color-red;
 }
 
-.irs--flat .irs-bar, .irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-bar, .irs--flat .irs-handle > i:first-child {
   background: $color-red;
 }
 
 .irs-with-grid .irs-grid {
-  //display: none;
+  display: none;
 }
 
 .irs--flat .irs-grid-text {
@@ -1087,6 +1090,103 @@
 .irs--flat .irs-grid-pol {
   background: $color-black;
 }
+
+//--------ASIDE LIST---------
+
+.aside {
+  &-filter {
+    &__item-list {
+      border-bottom: 1px solid $color-gray;
+
+    }
+  }
+}
+
+.filter {
+  &__item {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &-listtitle {
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      padding-left: 25px;
+      @extend %sfpd-bold;
+    }
+
+  }
+}
+.jq-selectbox__select {
+  color: #181414;
+  height: 20px;
+  padding: 0 25px 0 10px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  @extend %sfpd-reg;
+  text-shadow: none;
+  top: -6px;
+
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+  position: absolute;
+  background-image: url('../images/arr-down.svg');
+  width: 12px;
+  height: 8px;
+  top: 14px;
+  right: 8px;
+
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: none;
+  background: transparent;
+}
+.jq-selectbox.focused:active, .jq-selectbox__select:hover {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.jq-selectbox li:hover {
+  background: $color-red;
+  color: #FFF;
+}
+
+.jq-selectbox li.selected {
+  background: $color-red;
+  color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //----------------ASIDE END-----------------
 
