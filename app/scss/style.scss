@@ -922,6 +922,11 @@
 
     }
 
+    &__item-drop {
+      border-bottom: 1px solid $color-gray;
+
+    }
+
     &__item-drop, &__item-list {
       margin: 30px 0;
     }
@@ -934,7 +939,7 @@
     &__content {
       display: flex;
       flex-wrap: wrap;
-
+      margin-bottom: 15px;
 
       &-label {
         cursor: pointer;
@@ -1093,20 +1098,12 @@
 
 //--------ASIDE LIST---------
 
-.aside {
-  &-filter {
-    &__item-list {
-      border-bottom: 1px solid $color-gray;
-
-    }
-  }
-}
-
 .filter {
   &__item {
     &-list {
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid $color-gray;
 
     }
 
@@ -1117,7 +1114,9 @@
       padding-left: 25px;
       @extend %sfpd-bold;
     }
-
+    &-listselect-option {
+      width: 100px;
+    }
   }
 }
 .jq-selectbox__select {
