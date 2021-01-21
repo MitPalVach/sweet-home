@@ -26,16 +26,16 @@ $(function () {
         slidesToScroll: 1
     });
 
-    $('.tab').on('click', function (e) {
-        e.preventDefault();
-
-        $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-
-        $(this).addClass('tab--active');
-        $($(this).attr('href')).addClass('tabs-content--active');
-
-    });
+    // $('.tab').on('click', function (e) {
+    //     e.preventDefault();
+    //
+    //     $($(this).siblings()).removeClass('tab--active');
+    //     $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+    //
+    //     $(this).addClass('tab--active');
+    //     $($(this).attr('href')).addClass('tabs-content--active');
+    //
+    // });
 
     $('.product-item__heart').on('click', function () {
         $(this).toggleClass('product-item__heart--active')
@@ -48,7 +48,7 @@ $(function () {
 
     $(".catalog__filter-items .catalog__tab").click(function () {
         $(".catalog__tab").removeClass("catalog__filter-btn--active").eq($(this).index()).addClass("catalog__filter-btn--active");
-        $(".catalog__inner-list").hide().eq($(this).index()).fadeIn()
+        $(".catalog__inner-list").hide().eq($(this).index()).fadeIn();
     }).eq(0).addClass("catalog__filter-btn--active");
 
 
@@ -62,8 +62,33 @@ $(function () {
     $(".js-range-slider").ionRangeSlider();
 
 
+    // $('.catalog__filter-btn--grid').on('click', function (){
+    //    $(this).addClass('catalog__filter-button--active');
+    //    $('.catalog__filter-btn--row').removeClass('catalog__filter-button--active');
+    //     $('.product-item__wrapper').removeClass('product-item__wrapper--list');
+    // });
+    //
+    // $('.catalog__filter-btn--row').on('click', function (){
+    //    $(this).addClass('catalog__filter-button--active');
+    //    $('.catalog__filter-btn--grid').removeClass('catalog__filter-button--active');
+    //    $('.product-item__wrapper').addClass('product-item__wrapper--list');
+    // });
+
+
+
 
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
 

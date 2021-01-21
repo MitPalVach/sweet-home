@@ -783,6 +783,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    align-items: center;
 
     &-btn.catalog__filter-btn--active {
       background: $color-l-gray;
@@ -809,20 +810,11 @@
       }
 
       &, button + button {
-        margin-left: 22px;
+        margin-left: 8px;
       }
 
     }
   }
-
-  &-grid__icon {
-
-  }
-
-  &-row__icon {
-
-  }
-
   &__inner {
     display: flex;
 
@@ -835,7 +827,8 @@
     }
 
     &-aside {
-      min-width: 290px;
+      min-width: 289px;
+      max-width: 290px;
       margin-right: 30px;
     }
 
@@ -850,6 +843,19 @@
       }
     }
   }
+}
+
+.catalog__filter-button {
+  opacity: .3;
+}
+
+.catalog__filter-button--active {
+  opacity: 1;
+}
+
+.filter-style__top {
+  left: -10px;
+  width: 155px;
 }
 
 .pagination {
