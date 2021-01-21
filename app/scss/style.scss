@@ -805,6 +805,7 @@
         cursor: pointer;
         margin: 0;
         padding: 0;
+        outline: none;
       }
 
       &, button + button {
@@ -922,11 +923,6 @@
 
     }
 
-    &__item-drop {
-      border-bottom: 1px solid $color-gray;
-
-    }
-
     &__item-drop, &__item-list {
       margin: 30px 0;
     }
@@ -1031,7 +1027,90 @@
     }
 
   }
+
+  &-more {
+    margin-bottom: 10px;
+    width: 100%;
+
+    &__btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-search {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+
+    &::placeholder {
+      color: #888888;
+      font-size: 14px;
+    }
+  }
 }
+
+//.btn-checked .aside-filter__content-label {
+//  position: relative;
+//}
+//
+//.btn-checked .aside-filter__content-box {
+//  width: auto;
+//  margin-bottom: 20px;
+//
+//}
+//
+//.btn-checked .jq-checkbox {
+//  height: 25px;
+//  width: 60px;
+//  background: $color-l-gray;
+//  border: none;
+//  color: #888888;
+//  &.checked {
+//    background: $color-red;
+//    color: #FFFFFF;
+//  }
+//}
+//
+//.btn-checked__text {
+//  position: absolute;
+//}
+//
+//.btn-checked .jq-checkbox.checked .jq-checkbox__div {
+// display: none;
+//}
+//
+//.jq-checkbox .filter-style .focused .checked {
+//  .btn-checked__text {
+//    background: $color-red;
+//    color: #FFFFFF;
+//  }
+//}
+
+.aside-bottom__btn {
+  text-align: center;
+}
+
+.filter-btn__send {
+  border: none;
+  background: $color-red;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
 
 .irs--flat.irs-with-grid {
   width: 100%;
@@ -1114,11 +1193,13 @@
       padding-left: 25px;
       @extend %sfpd-bold;
     }
+
     &-listselect-option {
       width: 100px;
     }
   }
 }
+
 .jq-selectbox__select {
   color: #181414;
   height: 20px;
@@ -1157,6 +1238,7 @@
   border: none;
   background: transparent;
 }
+
 .jq-selectbox.focused:active, .jq-selectbox__select:hover {
   border: none;
   background: transparent;
@@ -1172,19 +1254,6 @@
   background: $color-red;
   color: #FFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //----------------ASIDE END-----------------
