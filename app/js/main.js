@@ -26,16 +26,16 @@ $(function () {
         slidesToScroll: 1
     });
 
-    // $('.tab').on('click', function (e) {
-    //     e.preventDefault();
-    //
-    //     $($(this).siblings()).removeClass('tab--active');
-    //     $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-    //
-    //     $(this).addClass('tab--active');
-    //     $($(this).attr('href')).addClass('tabs-content--active');
-    //
-    // });
+    $('.tab').on('click', function (e) {
+        e.preventDefault();
+
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+
+        $(this).addClass('tab--active');
+        $('.tabs-content').eq($(this).index()).addClass('tabs-content--active');
+
+    });
 
     $('.product-item__heart').on('click', function () {
         $(this).toggleClass('product-item__heart--active')
