@@ -682,6 +682,7 @@
     font-size: 12px;
     font-weight: 500;
     outline: none;
+    cursor: pointer;
 
   }
 
@@ -815,6 +816,7 @@
 
     }
   }
+
   &__inner {
     display: flex;
 
@@ -1263,5 +1265,86 @@
 
 
 //----------------ASIDE END-----------------
+
+//-------------------- PRODUCT PAGE ------------------
+
+.product-card {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: 700px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  &__price--new {
+    color: #ed1915;
+    font-size: 28px;
+    line-height: 32px;
+    @extend %sfpd-bold;
+    margin: 10px 0;
+  }
+
+  &__price--old {
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+  }
+
+
+  &__content {
+    width: 440px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__buttons button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+
+  &__buy {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    background: $color-red;
+    color: #FFFFFF;
+
+    margin-top: 10px;
+  }
+
+
+  &__list {
+    margin-top: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    &-left, &-right {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+
+//-------------------- PRODUCT PAGE END------------------
+
 
 @import "media";
