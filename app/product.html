@@ -9,6 +9,7 @@
 
     <title>Sweet Home</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
@@ -174,25 +175,29 @@
                 <p class="product-card__code">Артикул: 80332844</p>
                 <p class="product-card__price--new">15 999 ₽</p>
                 <p class="product-card__price--old">22 999 ₽</p>
-
-                <div class="product-card__buttons">
+                <div class="product-card__icon">
                     <button class="product-card__icon-heart">
-                        <img src="images/heart.svg" alt="">
                     </button>
                     <button class="product-card__icon-compare">
-                        <img src="images/compare.svg" alt="">
                     </button>
-                    <div class="rate">
 
+<!--                    <a class="product-card__icon-rate" href="#">-->
+<!--                        <div class="rate-yo" data-rateyo-rating="3"></div>-->
+<!--                    </a>-->
+
+                </div>
+                <div class="product-card__buttons">
+                    <div class="product-card__btn">
+                        <button class="product-card__btn-buy">Купить</button>
+                        <a class="product-card__btn-sale" href="#">SALE</a>
                     </div>
-                    <button class="product-card__buy">Купить</button>
 
                 </div>
 
                 <ul class="product-card__list">
                     <li class="product-card__item">
-                        <div class="product-card__item-left">Рассрочка 0-0-24</div>
-                        <div class="product-card__item-right">1 334 ₽ /мес</div>
+                        <a class="product-card__item-left" href="#">Рассрочка 0-0-24</a>
+                        <a class="product-card__item-right" href="#">1 334 ₽ /мес*</a>
                     </li>
                     <li class="product-card__item">
                         <div class="product-card__item-left">Доставка</div>
@@ -207,14 +212,11 @@
                         <div class="product-card__item-right">из 1 магазина</div>
                     </li>
                     <li class="product-card__item">
-                        <div class="product-card__item-left">На витрине</div>
-                        <div class="product-card__item-right">в 1 магазине</div>
-                    </li>
-                    <li class="product-card__item">
                         <div class="product-card__item-left">Доступно</div>
                         <div class="product-card__item-right">4 шт.</div>
                     </li>
                 </ul>
+                <a class="product-card__comparison" href="#">Сравниваните товары</a>
             </div>
         </div>
     </div>
@@ -328,7 +330,7 @@
 
 <!--FOOTER END-->
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>

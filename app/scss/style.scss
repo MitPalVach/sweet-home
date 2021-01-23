@@ -171,7 +171,7 @@
   background: transparent;
 }
 
-.slick-active li button {
+.slick-active button {
   background: #fff;
 }
 
@@ -781,10 +781,14 @@
 
 
   &__filter {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 50px;
     align-items: center;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
 
     &-btn.catalog__filter-btn--active {
       background: $color-l-gray;
@@ -856,6 +860,7 @@
 }
 
 .filter-style__top {
+
   left: -10px;
   width: 155px;
 }
@@ -1276,6 +1281,16 @@
 
   &__img {
     max-width: 700px;
+    height: 470px;
+  }
+
+  &__content {
+    width: 440px;
+    height: 470px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    background: $color-l-gray;
+    padding: 10px;
   }
 
   &__title {
@@ -1301,11 +1316,74 @@
 
   }
 
+  &__icon {
 
-  &__content {
-    width: 440px;
-    margin-left: 20px;
-    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 36px;
+
+    &-heart {
+      position: absolute;
+      border: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      top: -5px;
+      left: 0;
+      width: 24px;
+      height: 22px;
+      z-index: 5;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 22px;
+        top: -5px;
+        left: 0;
+        z-index: 11;
+        background-image: url('../images/heart.svg');
+      }
+
+      &--active::before {
+        z-index: 15;
+        background-image: url('../images/heart-red.svg');
+
+      }
+    }
+
+    &-compare {
+      position: absolute;
+      border: none;
+      background: transparent;
+      outline: none;
+      cursor: pointer;
+      bottom: -14px;
+      left: 35px;
+      width: 20px;
+      height: 28px;
+      z-index: 5;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 28px;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        background-image: url('../images/compare.svg');
+      }
+
+      &--active::before {
+        z-index: 15;
+        background-image: url('../images/compare-red.svg');
+      }
+    }
+
+    &-rate {
+
+
+    }
   }
 
   &__buttons button {
@@ -1314,18 +1392,34 @@
     border: none;
   }
 
-  &__buy {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    background: $color-red;
-    color: #FFFFFF;
+  &__btn {
+    display: flex;
+    justify-content: space-between;
 
-    margin-top: 10px;
+    &-buy {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      background: $color-red;
+      color: #FFFFFF;
+      margin-top: 10px;
+
+    }
+
+    &-sale {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      background: $color-red;
+      color: #FFFFFF;
+      margin-top: 10px;
+
+    }
   }
-
 
   &__list {
     margin-top: 20px;
@@ -1334,14 +1428,28 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 6px 0;
+
+    & a:hover {
+      text-decoration: underline;
+    }
 
     &-left, &-right {
       font-size: 18px;
-      line-height: 22px;
+      line-height: 20px;
     }
   }
+
+  &__comparison {
+    display: none;
+  }
+
+  &__comparison.product-card__icon-compare--active {
+    display: block;
+  }
+
 }
+
 
 
 //-------------------- PRODUCT PAGE END------------------
