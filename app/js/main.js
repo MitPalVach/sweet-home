@@ -1,8 +1,16 @@
 $(function () {
 
-    $('.rate-yo').rateYo({
-        rating: 3.6
-    });
+    // $('.rate-yo').rateYo({
+    //     rating: 3.6
+    // });
+
+    // $("#rateYo").rateYo({
+    //     rating: 3.6
+    // });
+
+
+
+
 
     $('.banner-section__slider').slick({
         dots: true,
@@ -39,8 +47,10 @@ $(function () {
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
         // $('.tabs-content').eq($(this).index()).addClass('tabs-content--active');
-
     });
+
+
+
 
     $('.product-item__heart').on('click', function () {
         $(this).toggleClass('product-item__heart--active')
@@ -69,6 +79,22 @@ $(function () {
 
 
     // ---------------------
+
+
+    $('.card__tab').on('click', function (e) {
+        e.preventDefault();
+
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+
+        $(this).addClass('tab--active');
+        $($(this).attr('href')).addClass('tabs-content--active');
+    });
+
+
+    $(function(){
+        $("#datepicker").datepicker();
+    });
 
 
     $('.filter-style').styler();

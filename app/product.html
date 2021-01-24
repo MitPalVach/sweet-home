@@ -10,6 +10,11 @@
     <title>Sweet Home</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
@@ -180,10 +185,10 @@
                     </button>
                     <button class="product-card__icon-compare">
                     </button>
-
-<!--                    <a class="product-card__icon-rate" href="#">-->
-<!--                        <div class="rate-yo" data-rateyo-rating="3"></div>-->
-<!--                    </a>-->
+                    <!--                    <div id="rateYo"></div>-->
+                    <!--                    <a class="product-card__icon-rate" href="#">-->
+                    <!--                        <div class="rate-yo" data-rateyo-rating="3"></div>-->
+                    <!--                    </a>-->
 
                 </div>
                 <div class="product-card__buttons">
@@ -198,6 +203,10 @@
                     <li class="product-card__item">
                         <a class="product-card__item-left" href="#">Рассрочка 0-0-24</a>
                         <a class="product-card__item-right" href="#">1 334 ₽ /мес*</a>
+                    </li>
+                    <li class="product-card__item">
+                        <div class="product-card__item-left">Гарантия</div>
+                        <div class="product-card__item-right">24 мес</div>
                     </li>
                     <li class="product-card__item">
                         <div class="product-card__item-left">Доставка</div>
@@ -225,14 +234,426 @@
 
 <!--PRODUCT PAGE END-->
 
+<!--CARD TABS-->
 
-<!--<div class="tabs-wrapper product-card__tabs">-->
+<section class="card__tabs page-section">
+    <div class="container">
+
+        <div class="tabs-wrapper">
+            <div class="tabs card__tab-list">
+                <a class="tab card__tab tab--active" href="#card__tab-1">Описание</a>
+                <a class="tab card__tab" href="#card__tab-2">Комплект</a>
+                <a class="tab card__tab" href="#card__tab-3">Доп. товары</a>
+                <a class="tab card__tab" href="#card__tab-4">Доставка</a>
+                <a class="tab card__tab" href="#card__tab-5">Сервис и Услуги</a>
+                <a class="tab card__tab" href="#card__tab-6">На витрине</a>
+            </div>
+            <div class="card__tabs-container">
+                <div id="card__tab-1" class="card__tab-content tabs-content--active">
+                    <h3 class="card__tab-content-title">
+                        Кухонный гарнитур «Сити»
+                    </h3>
+                    <p class="card__tab-content-text">
+                        Прекрасный выбор для малогабаритной квартиры. Два ряда напольных и
+                        навесных шкафов займут минимум пространства, вместив, при этом, всю необходимую кухонную утварь.
+                        Защитная пленка на фасадах уберегает модули от воздействия влаги и жира, легко очищается от
+                        загрязнений неабразивными моющими средствами. Обладает прочной цельной столешницей, поверхность
+                        которой устойчива к механическим повреждениям и истиранию.
+                    </p>
+                    <p class="card__tab-content-text">
+                        Дополнительная опция: петли Boyard с доводчиком (для плавного и бесшумного закрывания).
+                        Требуемое количество петель для шкафов высотой 72 см:
+                        Шкафы 80 см, шкаф-пенал - 4 шт.
+                        Все остальные, в т.ч. с 1-м выдвижным ящиком - 2 шт.
+                    </p>
+                    <p class="card__tab-content-text">
+                        Требуемое количество петель для шкафов высотой 96 см:
+                        Шкаф навесной угловой, шкаф 40 см, 45 см - 2 шт.
+                        Шкаф навесной 60 см - 3 шт.
+                        Шкаф навесной 80 см - 4 шт.
+                    </p>
+                    <p class="card__tab-content-text">
+                        В шкафы с горизонтальным открыванием петли с доводчиками не ставятся.
+                    </p>
+
+                </div>
+                <div id="card__tab-2" class="card__tab-content">
+                    <h3 class="card__tab-content-title">
+                        В комплектацию входит:
+                    </h3>
+                    <p class="card__tab-content-text">
+                        - верхний шкаф 60 см (1 полка)<br>
+                        - нижний шкаф под мойку 60 см<br>
+                        - верхний шкаф 80 см (1 полка)<br>
+                        - нижний шкаф 80 см (1 полка)<br>
+                        - шкаф под встроенную духовку<br>
+                        - верхний шкаф 40 см (1 полка)<br>
+                        - нижний шкаф 40 см с 1-м выдвижным ящиком (1 полка)<br>
+                        - цоколь
+                    </p>
+                    <p class="card__tab-content-text">
+                        Высота верхних шкафов - 72 см<br>
+                        Глубина верхних шкафов – 31,6 см<br>
+                        Высота нижних шкафов - 82 см (без учета столешницы, столешница в комплект не входит)<br>
+                        Глубина нижних шкафов - 52,6 см. Глубина по столешнице - 60 см (столешница в комплект не входит)<br>
+                    </p>
+                    <p class="card__tab-content-text">
+                        Дверцы могут открываться в разные стороны: фасады перенавешиваются.
+                    </p>
+                </div>
+                <div id="card__tab-3" class="card__tab-content">
+                    <h3 class="card__tab-content-title">
+                        С этим товаром часто покупают:
+                    </h3>
+
+
+                    <div class="products__inner">
+                        <div class="tabs-wrapper">
+                            <div class="tabs products__tabs">
+                                <a class="tab products__tab tab--active" href="#recommend-tab-1">Посуда</a>
+                                <a class="tab products__tab" href="#recommend-tab-2">Шторы</a>
+                                <a class="tab products__tab" href="#recommend-tab-3">Постельное белье</a>
+                                <a class="tab products__tab" href="#recommend-tab-4">Светильники</a>
+                                <a class="tab products__tab" href="#recommend-tab-5">Товары для дома</a>
+                                <a class="tab products__tab" href="#recommend-tab-6">Домашний уют</a>
+                            </div>
+                            <div class="tabs-container products__container">
+
+                                <div id="recommend-tab-1"
+                                     class="tabs-content products-content tabs-content--active">
+                                    <div class="product-slider">
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_2.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Форма для выпечки с крышкой разъёмная BEKKER ВК-3909 26
+                                                        см
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        559 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        679 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_1.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Набор посуды VANHOPPER Norridge
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        9 999 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        679 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_3.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Набор посуды REGENT Inox Bimbo Vitro
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        4 999 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        679 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_4.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Нож Шеф VANHOPPER Tilburg
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        999 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        1 279 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_5.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Форма для выпечки с крышкой разъёмная BEKKER ВК-3909 26
+                                                        см
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        399 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        679 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper product-item__not-available">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_6.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Набор ножей на подставке BERKRAFT Malta
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        559 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        679 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item product-item--sale" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_7.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Контейнер для продуктов 11944 3,6 л в ассортименте
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        239 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        299 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-slider__item">
+                                            <div class="product-item__wrapper">
+
+                                                <button class="product-item__heart"></button>
+                                                <button class="product-item__basket"></button>
+                                                <a class="product-item__notify-link" href="#">
+                                                    <span>Сообщить о поступлении</span>
+                                                </a>
+                                                <a class="product-item" href="#">
+                                                    <p class="product-item__hover-text">
+                                                        Посмотреть
+                                                    </p>
+                                                    <img class="product-item__img"
+                                                         src="images/content/prod_8.jpg" alt="">
+                                                    <h4 class="product-item__title">
+                                                        Кружка Sheffield 330 мл
+                                                    </h4>
+                                                    <p class="price product-item__price-new">
+                                                        149 ₽
+                                                    </p>
+                                                    <p class="price product-item__price-old">
+                                                        199 ₽
+                                                    </p>
+                                                    <p class="product-item__notify-text">
+                                                        нет в наличии
+                                                    </p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="recommend-tab-2" class="tabs-content products-content">slider-2</div>
+
+                                <div id="recommend-tab-3" class="tabs-content products-content">slider-3</div>
+
+                                <div id="recommend-tab-4" class="tabs-content products-content">slider-4</div>
+
+                                <div id="recommend-tab-5" class="tabs-content products-content">slider-5</div>
+
+                                <div id="recommend-tab-6" class="tabs-content products-content">slider-6</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="card__tab-4" class="card__tab-content">
+                    <p class="card__tab-content-text">content-4</p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, delectus doloribus eveniet
+                        iusto laborum neque quasi qui, quia reprehenderit ut vitae voluptatem.
+                    </p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur ducimus excepturi hic
+                        labore mollitia quam suscipit? A accusantium alias amet corporis dolor dolores excepturi
+                        exercitationem fugit illum impedit in ipsa ipsum, laboriosam maiores, maxime nobis officiis quam
+                        quod reiciendis rem repudiandae soluta velit?
+                    </p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ipsam iste neque tempora
+                        tenetur
+                        voluptate voluptatibus! Atque aut, consequatur dicta doloribus eius fuga itaque, iusto natus
+                        odio
+                        perspiciatis placeat quos tempora tenetur? Delectus?
+                    </p>
+                </div>
+                <div id="card__tab-5" class="card__tab-content">
+                    <p class="card__tab-content-text">content-5</p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cumque deserunt, dolore iste
+                        laborum laudantium molestiae, nam nemo nobis nulla perspiciatis quam quia reprehenderit tenetur!
+                    </p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea, facere molestiae neque
+                        nesciunt, nostrum perspiciatis quia ratione, rem repellendus saepe sapiente. Asperiores aut cum
+                        distinctio, enim esse et, excepturi facilis hic illum itaque laudantium nesciunt odio officia
+                        praesentium quia recusandae sunt tempore vel veritatis voluptatum! Adipisci blanditiis eos error
+                        iste laborum odio, sunt voluptate.
+                    </p>
+                    <p class="card__tab-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores debitis, libero omnis
+                        provident
+                        quidem repudiandae? Commodi deleniti facere illo ipsam libero maiores mollitia, nesciunt odio
+                        officia perferendis reprehenderit.
+                    </p>
+                </div>
+                <div id="card__tab-6" class="card__tab-content">
+                    <p class="card__tab-content-text">
+                        Этот товар есть на витрине по адресу г. Казань, ул. Татарстан д.52
+                    </p>
+                    <p class="card__tab-content-text">
+                        Ежедневного с 10:00 до 22:00
+                    </p>
+
+                    <div class="card__tab-map" style="width: 100%">
+                        <div style="width: 100%">
+                            <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0"
+                                    marginwidth="0"
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%20%D1%83%D0%BB.%20%D0%A2%D0%B0%D1%82%D0%B0%D1%80%D1%81%D1%82%D0%B0%D0%BD%20%D0%B4.52+(%D0%9C%D0%B8%D0%BB%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%BC)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!--CARD TABS END-->
+
+
+<!--<div class="tabs-wrapper">-->
 <!--    <div class="tabs">-->
-<!--        <a class="tab product-card__tab tab&#45;&#45;active" href="#">Описание</a>-->
-<!--        <a class="tab product-card__tab" href="#"></a>-->
+<!--        <a class="tab tab&#45;&#45;active" href="#"></a>-->
 <!--    </div>-->
 <!--    <div class="tabs-container">-->
-<!--        <div class="tabs-content product-card__tab-content"></div>-->
+<!--        <div class="tabs-content tabs-content&#45;&#45;active"></div>-->
 <!--    </div>-->
 <!--</div>-->
 
@@ -331,6 +752,11 @@
 <!--FOOTER END-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 <script src="js/slick.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>

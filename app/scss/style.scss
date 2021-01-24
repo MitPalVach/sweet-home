@@ -370,6 +370,7 @@
 
     &-img {
       width: 120px;
+      height: 120px;
       background: #feda00;
       padding: 20px;
       margin-bottom: 15px;
@@ -407,7 +408,8 @@
   text-align: center;
   padding: 45px 20px 60px;
   transition: all .3s;
-  min-height: 400px;
+  min-height: 399.9px;
+  max-height: 400px;
   outline: none;
   width: 270px;
 
@@ -1451,8 +1453,61 @@
 }
 
 
-
 //-------------------- PRODUCT PAGE END------------------
 
+//-------------CARD TABS---------------
+
+.card {
+  &__tab {
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+
+    }
+
+
+    &-list {
+      background: $color-l-gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-height: 40px;
+      margin-bottom: 15px;
+
+      }
+
+
+
+    &-content {
+      padding: 20px;
+
+      &-title {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      &-text {
+        margin-bottom: 10px;
+        line-height: 24px;
+      }
+    }
+
+    &-content {
+      display: none;
+    }
+
+    &-content.tabs-content--active {
+      display: block;
+    }
+
+  }
+
+
+}
+
+
+//--------------CARD TABS END----------------
 
 @import "media";
