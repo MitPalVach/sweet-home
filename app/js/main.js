@@ -8,6 +8,9 @@ $(function () {
     //     rating: 3.6
     // });
 
+    $('.menu__btn').on('click', function (){
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+    });
 
 
 
@@ -24,8 +27,8 @@ $(function () {
     });
 
     $('.stock__items').slick({
-        prevArrow: '<button class="stock__btn stock__btn-prev"><img class="slider__button-left" src="../images/left_1.svg" alt=""></button>',
-        nextArrow: '<button class="stock__btn stock__btn-next"><img class="slider__button-right" src="../images/right_1.svg" alt=""></button>',
+        prevArrow: "<button class='stock__btn stock__btn-prev'><img class='slider__button-left' src='../images/left_1.svg' alt=''></button>",
+        nextArrow: "<button class='stock__btn stock__btn-next'><img class='slider__button-right' src='../images/right_1.svg' alt=''></button>",
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
@@ -61,10 +64,10 @@ $(function () {
     });
 
 
-    $(".catalog__filter-items .catalog__tab").click(function () {
-        $(".catalog__tab").removeClass("catalog__filter-btn--active").eq($(this).index()).addClass("catalog__filter-btn--active");
-        $(".catalog__inner-list").hide().eq($(this).index()).fadeIn();
-    }).eq(0).addClass("catalog__filter-btn--active");
+    $('.catalog__filter-items .catalog__tab').click(function () {
+        $('.catalog__tab').removeClass('catalog__filter-btn--active').eq($(this).index()).addClass('catalog__filter-btn--active');
+        $('.catalog__inner-list').hide().eq($(this).index()).fadeIn();
+    }).eq(0).addClass('catalog__filter-btn--active');
 
 
     // ------------------------
@@ -96,6 +99,7 @@ $(function () {
         $("#datepicker").datepicker();
     });
 
+    // ?????????????????????????????????????????????????????????????????????????????????
 
     $('.filter-style').styler();
     $('.filter__item-drop').on('click', function () {
@@ -105,7 +109,8 @@ $(function () {
 
 
 
-    $(".js-range-slider").ionRangeSlider();
+    $('.js-range-slider').ionRangeSlider();
+
 
 
     // $('.catalog__filter-btn--grid').on('click', function (){
