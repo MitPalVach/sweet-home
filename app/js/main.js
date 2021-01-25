@@ -42,6 +42,12 @@ $(function () {
         autoplaySpeed: 3000,
         responsive: [
             {
+                breakpoint: 1250,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
                 breakpoint: 1124,
                 settings: {
                     slidesToShow: 3,
@@ -70,7 +76,37 @@ $(function () {
         prevArrow: '<button class="product-slider__btn product-slider__btn-prev"><img class="slider__button-left" src="../images/left_1.svg" alt=""></button>',
         nextArrow: '<button class="product-slider__btn product-slider__btn-next"><img class="slider__button-right" src="../images/right_1.svg" alt=""></button>',
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1124,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
     });
 
     $('.tab').on('click', function (e) {
