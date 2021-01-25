@@ -22,7 +22,15 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
         autoplaySpeed: 3000,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
 
     });
 
@@ -32,6 +40,30 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1124,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     $('.product-slider').slick({
