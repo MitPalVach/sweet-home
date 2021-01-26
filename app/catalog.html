@@ -26,12 +26,17 @@
     <div class="header__top">
         <div class="container">
             <div class="header__top-inner">
-
+                <button class="menu__btn">
+                    <div class="menu__btn-line"></div>
+                    <div class="menu__btn-line"></div>
+                    <div class="menu__btn-line"></div>
+                </button>
                 <a class="logo" href="#">
                     <img class="logo__img" src="images/sweet_home.png" alt="">
                 </a>
 
                 <nav class="menu">
+
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">
@@ -85,6 +90,125 @@
     </div>
 
     <!--    HEADER TOP END-->
+
+    <!--    MOBILE HEADER-->
+
+    <ul class="menu-mobile__list">
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/enter.svg" alt="">
+                <p>Войти</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/user.svg" alt="">
+                <p>Регистрация</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/heart.svg" alt="">
+                <p>Избранное</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/basket.svg" alt="">
+                <p>Корзина</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/home.svg" alt="">
+                <p>Магазины</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/percent.svg" alt="">
+                <p>Акции</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/box.svg" alt="">
+                <p>Доставка</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <img class="menu-mobile__img" src="images/coins.svg" alt="">
+                <p>Оплата</p>
+            </a>
+        </li>
+
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Кухни</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Спальни</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Детские</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Гостиные</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Прихожие</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Диваны</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Шкафы</p>
+            </a>
+        </li>
+        <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+                <p>Дисконт</p>
+            </a>
+        </li>
+    </ul>
+    <div class="menu__mobile-line-wrapper">
+        <ul class="menu__mobile-line">
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Где купить
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Акции
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Доставка
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    Оплата
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--    MOBILE HEADER END-->
 
     <!--    HEADER BOTTOM-->
 
@@ -168,7 +292,6 @@
                     <a class="catalog__tab catalog__filter-btn" href="#catalog-2">Модульные кухни</a>
                     <a class="catalog__tab catalog__filter-btn" href="#catalog-3">Кухонные столы и стулья</a>
                     <a class="catalog__tab catalog__filter-btn" href="#catalog-4">Кухонные уголки</a>
-
                 </div>
                 <div class="catalog__filter-btn">
                     <select class="filter-style filter-style__top">
@@ -176,21 +299,19 @@
                         <option value="">По цене</option>
                         <option value="">По рейтингу</option>
                     </select>
-
-                    <!--                <button class="catalog__filter-btn&#45;&#45;grid catalog__filter-button catalog__filter-button&#45;&#45;active">-->
-                    <!--                    <img class="catalog-grid__icon" src="images/show_grid.svg" alt="">-->
-
-                    <!--                </button>-->
-                    <!--                <button class="catalog__filter-btn&#45;&#45;row catalog__filter-button">-->
-                    <!--                    <img class="catalog-row__icon" src="images/show_row.svg" alt="">-->
-                    <!--                </button>-->
-                    <!--            </div>-->
                 </div>
             </div>
+
             <!--            ASIDE-->
 
             <div class="catalog__inner">
+                <div class="aside__btn">
+                    Расширенный поиск
+                </div>
                 <aside class="catalog__inner-aside aside-filter">
+
+
+
                     <div class="tabs-catalog">
                         <div class="tabs aside-filter__tabs">
                             <a class="tab aside-filter__tab tab--active" href="#filter-1"><span>Все товары</span></a>
@@ -1168,7 +1289,8 @@
                 </div>
                 <div class="footer__top-item">
                     <h6 class="footer__top-title">О компании</h6>
-                    <ul class="footer-list">
+
+                    <ul class="footer-list" id="dd2">
                         <li class="footer-list__item"><a href="#">О работе у нас</a></li>
                         <li class="footer-list__item"><a href="#">Вакансии</a></li>
                         <li class="footer-list__item"><a href="#">Магазины</a></li>
@@ -1178,6 +1300,7 @@
                 </div>
                 <div class="footer__top-item">
                     <h6 class="footer__top-title">Каталог</h6>
+
                     <ul class="footer-list">
                         <li class="footer-list__item"><a href="#">Мягкая мебель</a></li>
                         <li class="footer-list__item"><a href="#">Корпусная мебель</a></li>
@@ -1188,6 +1311,7 @@
                 </div>
                 <div class="footer__top-item">
                     <h6 class="footer__top-title">Дополнительно</h6>
+
                     <ul class="footer-list">
                         <li class="footer-list__item"><a href="#">Поставщикам</a></li>
                         <li class="footer-list__item"><a href="#">Бренды</a></li>

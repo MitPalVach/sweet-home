@@ -1,9 +1,9 @@
-@media (max-width: 1250px) {
+@media (max-width: 1251px) {
 
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .banner-section__slider div {
     text-align: center;
   }
@@ -24,10 +24,14 @@
 
   }
 
+  .catalog__inner-list {
+    justify-content: space-around;
+  }
+
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1101px) {
 
   .menu__item + .menu__item {
     padding-left: 20px;
@@ -43,7 +47,7 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
 
   .logo__img {
     width: 55px;
@@ -127,7 +131,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 901px) {
 
 
   .banner-section.container {
@@ -154,11 +158,18 @@
     display: none;
   }
 
+  .catalog__filter-inner {
+    display: block;
+  }
+
+  .jq-selectbox__select-text {
+    margin-top: 30px;
+  }
 
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 771px) {
 
 
   .page-section {
@@ -177,7 +188,45 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 671px) {
+
+  .catalog__inner-aside {
+max-width: 100%;
+  }
+
+
+  .catalog__filter-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__inner {
+    display: block;
+  }
+
+  .aside__btn {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #ed1915;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .catalog__inner-aside {
+    display: none;
+    width: 600px;
+  }
+
+
+}
+
+
+@media (max-width: 641px) {
 
   .header__address {
     display: none;
@@ -191,11 +240,52 @@
     margin: 15px 0;
   }
 
+  .tabs-catalog {
+    width: 560px;
+  }
+
+
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 601px) {
+  .tabs-catalog {
+    width: 500px;
+  }
 
+}
+
+
+@media (max-width: 551px) {
+  .tabs-catalog {
+    width: 450px;
+  }
+
+}
+@media (max-width: 501px) {
+  .tabs-catalog {
+    width: 400px;
+  }
+
+}
+@media (max-width: 441px) {
+  .tabs-catalog {
+    width: 340px;
+  }
+}
+@media (max-width: 361px) {
+  .tabs-catalog {
+    width: 320px;
+  }
+
+}
+@media (max-width: 321px) {
+  .tabs-catalog {
+    width: 290px;
+  }
+  .pagination__list-item {
+    margin: 0 4px;
+  }
 
 }
 
