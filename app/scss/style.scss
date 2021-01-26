@@ -787,6 +787,11 @@ display: block;
   }
 }
 
+.footer__top-title {
+  pointer-events: none;
+}
+
+
 //---------------FOOTER END -------------
 
 //-------------BREADCRUMBS------------
@@ -1337,12 +1342,10 @@ display: block;
 
   &__img {
     max-width: 700px;
-    height: 470px;
   }
 
   &__content {
     width: 440px;
-    height: 470px;
     margin-left: 20px;
     flex-wrap: wrap;
     background: $color-l-gray;
@@ -1563,5 +1566,6 @@ display: block;
 
 
 //--------------CARD TABS END----------------
+
 
 @import "media";

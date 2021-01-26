@@ -59,14 +59,18 @@ $(function () {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false,
+
                 }
             },
             {
                 breakpoint: 580,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false,
+
                 }
             }
         ]
@@ -89,20 +93,26 @@ $(function () {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
+                    arrows: false,
+
                 }
             },
             {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false,
+
                 }
             },
             {
                 breakpoint: 580,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false,
+
                 }
             }
         ]
@@ -118,6 +128,8 @@ $(function () {
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
         // $('.tabs-content').eq($(this).index()).addClass('tabs-content--active');
+
+        $('.product-slider').slick('setPosition');
     });
 
 
