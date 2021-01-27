@@ -1,12 +1,8 @@
 $(function () {
 
-    // $('.rate-yo').rateYo({
-    //     rating: 3.6
-    // });
-
-    // $("#rateYo").rateYo({
-    //     rating: 3.6
-    // });
+    $("#rateYo").rateYo({
+        rating: 3.6
+    });
 
     $('.menu__btn').on('click', function (){
         $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
@@ -133,8 +129,6 @@ $(function () {
     });
 
 
-
-
     $('.product-item__heart').on('click', function () {
         $(this).toggleClass('product-item__heart--active')
     });
@@ -161,9 +155,6 @@ $(function () {
     });
 
 
-    // ---------------------
-
-
     $('.card__tab').on('click', function (e) {
         e.preventDefault();
 
@@ -175,10 +166,6 @@ $(function () {
     });
 
 
-    $(function(){
-        $("#datepicker").datepicker();
-    });
-
     $('.footer__top-title').on('click', function (){
         $(this).next().slideToggle(100);
     });
@@ -189,10 +176,6 @@ $(function () {
     });
 
 
-
-
-    // ?????????????????????????????????????????????????????????????????????????????????
-
     $('.filter-style').styler();
     $('.filter__item-drop').on('click', function () {
         $(this).toggleClass('filter__item-drop--active');
@@ -202,31 +185,6 @@ $(function () {
 
 
     $('.js-range-slider').ionRangeSlider();
-
-
-
-
-    // $('.catalog__filter-btn--grid').on('click', function (){
-    //    $(this).addClass('catalog__filter-button--active');
-    //    $('.catalog__filter-btn--row').removeClass('catalog__filter-button--active');
-    //     $('.product-item__wrapper').removeClass('product-item__wrapper--list');
-    // });
-    //
-    // $('.catalog__filter-btn--row').on('click', function (){
-    //    $(this).addClass('catalog__filter-button--active');
-    //    $('.catalog__filter-btn--grid').removeClass('catalog__filter-button--active');
-    //    $('.product-item__wrapper').addClass('product-item__wrapper--list');
-    // });
-
-
-    // $('.product-card__icon-heart').on('click', function () {
-    //     $(this).toggleClass('product-card__icon-heart--active')
-    // });
-    //
-    // $('.product-card__icon-compare').on('click', function () {
-    //     $(this).toggleClass('product-card__icon-compare--active')
-    // });
-
 
 
 
